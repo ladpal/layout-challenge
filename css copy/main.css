@@ -2,107 +2,162 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 
 body {
-	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: 300;
-	background-image: url(../img/background.jpg);
-	background-size: cover;
-	background-attachment: fixed;
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-#basics a:link,
-#basics a:visited,
+.tag-line {
+    display: none;
+}
+
+#location a:link,
+#location a:visited,
 footer a:link,
 footer a:visited {
-	text-decoration: none;
-	color: #0000AA
+    text-decoration: none;
+    color: #0000AA
 }
 
-#basics a:hover,
-#basics a:focus,
+#location a:hover,
+#location a:focus,
 footer a:hover,
 footer a:focus {
-	color: #0000EE;
-} 
+    color: #0000EE;
+}
+
+header #location a:link,
+header #location a:visited,
+header #menu a:link,
+header #menu a:visited,
+header #about a:link,
+header #about a:visited {
+    color: #55E;
+}
+
+header #location a:hover,
+header #location a:focus,
+header #menu a:hover,
+header #menu a:focus,
+header #about a:hover,
+header #about a:focus {
+    color: #00E;
+}
 
 h1, h2, h3 {
-	font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
-	font-weight: 300;
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 300;
 }
 
 h1 {
-	font-size: 300%;
-	margin: 0;
-}
-
-h2, h3 {
-	color: #505050;
-}
-
-h2 {
-	font-size: 150%
+    font-size: 300%;
     margin: 0;
 }
 
-h3 {
-	font-size: 125%
+h2, h3 {
+    color: #505050;
 }
 
-main {
-	margin-left: 30%;
-	margin-right: 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	background-image: url(../img/ricepaper_v3.png);
-	opacity: 0.9;
+h2 {
+    font-size: 150%
+margin: 0;
+}
+
+h3 {
+    font-size: 125%
+}
+
+.container-fluid {
+    background-image: url(../img/ricepaper_v3.png);
+    opacity: 0.9;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 header {
-	background-color: #FA5A0F;
-	padding: 1em;
-	border-bottom: 5px solid #EA4A00;
-	color: #FFFFFF;
+    background-color: #FA5A0F;
+    padding: 1em;
+    border-bottom: 5px solid #EA4A00;
+    color: #FFFFFF;
+    position: relative;
 }
 
-header p {
-	font-size: 120%;
-	color: #EEEEEE;
-	margin: 0;
-}
 
-#basics {
-	padding: 1em;
+#location {
+    padding: 1em;
 }
 
 #menu {
-	padding: 1em;
-	background-color: rgba(207, 205, 140, 0.5);
+    padding: 1em;
+    background-color: rgba(207, 205, 140, 0.5);
 }
 
 #menu dt {
-	font-weight: 400;
+    font-weight: 400;
 }
 
 #menu dd {
-	font-size: 80%;
-	margin-left: 1em;
-	margin-bottom: 1em;
-	font-style: italic;
+    font-size: 80%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    font-style: italic;
 }
 
 #about {
-	padding: 1em;
+    padding: 1em;
 }
 
 footer {
-	padding: 1em;
-	background-color: #FC892F;
-	border-top: 5px solid #EC791F;
-	font-size: 80%;
-	text-align: right;
+    padding: 1em;
+    background-color: #FC892F;
+    border-top: 5px solid #EC791F;
+    font-size: 80%;
+    text-align: right;
 }
 
 .hi {
-	font-style: italic;
+    font-style: italic;
 }
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+@media (min-width: 992px) {
+    body {
+        background-image: url(../img/background.jpg);
+        font-size: 18px;
+    }
+
+    .container-fluid {
+        margin-left: 30%;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .tag-line {
+        font-size: 120%;
+        color: #EEEEEE;
+        margin: 0;
+        display: inline-block;
+    }
+
+    nav {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+
 
